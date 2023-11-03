@@ -1,0 +1,179 @@
+#contact-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    animation: bgColorChange 10s infinite; /* Duration here is the total of the color changes */
+    color: white; /* Light text color to be visible on dark backgrounds */
+  }
+
+  #contact-email {
+    /* Left side */
+    font-weight: bold;
+  }
+
+  #contact-mobile {
+    /* Right side */
+    font-weight: bold;
+  }
+
+  /* Keyframes for the background color change */
+  @keyframes bgColorChange {
+    0%, 100% { background-color: #3498db; } /* Blue */
+    20% { background-color: #d36e63; } /* Red */
+    40% { background-color: #2ecc71; } /* Green */
+    60% { background-color: #dfc86e; } /* Yellow */
+    80% { background-color: #c683e0; } /* Purple */
+  }
+
+
+  /* for first image */
+  #reddy {
+    width: 100%;
+    height: auto;
+} 
+  
+
+/* 3 box form with images */
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+}
+
+.image-box {
+    flex: 1;
+    text-align: center;
+   
+    padding: 10px;
+    
+}
+
+.image-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-text {
+    font-weight: bold;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+    }
+}
+
+/* for form*/
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* for 4 image in one row*/
+
+.image-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    gap: 10px;
+  }
+  
+  .image-box1 {
+    position: relative;
+    overflow: hidden;
+    flex: 1; /* Make each image box flexible */
+    min-width: 150px; /* Minimum width for each image box */
+    max-width: calc(25% - 10px); /* Maximum width for four images per row minus the gap */
+  }
+  
+  .image-box1 img {
+    width: 100%;
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Cover the area of the container */
+    transition: transform 0.3s ease;
+  }
+  
+  .image-text1 {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Align the center of the element with the cursor */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0; /* Make the text invisible initially */
+  }
+  
+  /* Hover effect */
+  .image-box1:hover img {
+    transform: scale(1.1); /* Scales up the image by 10% */
+  }
+  
+  .image-box1:hover .image-text1 {
+    opacity: 1; /* Make the text visible on hover */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .image-box1 {
+      max-width: calc(50% - 10px); /* Maximum width for two images per row on tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image-box1 {
+      max-width: 100%; /* Each image box takes full width on mobile */
+    }
+  }
+
+  
+  .paragraph1 {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    transition: all 0.5s ease-in-out;
+    background-color: #c4bcc0;
+   
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #c4bcc0;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.paragraph {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+   
+}

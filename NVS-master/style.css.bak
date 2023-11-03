@@ -1,0 +1,74 @@
+/* Header */
+#chinna {
+    padding: 10px;
+    font-size: 18px;
+}
+
+#sam {
+    float: right;
+}
+
+#nnn {
+    font-size: 24px;
+}
+
+.head {
+    font-size: 14px;
+}
+
+/* Responsive Images */
+#reddy {
+    width: 100%;
+    height: auto;
+}
+
+/* Main Content */
+.main1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.main {
+    padding: 10px;
+    text-align: center;
+}
+
+.pi {
+    font-size: 24px;
+}
+
+/* Flags and Text */
+#flagF {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#usflagA, #ukflagA, #canflagA, #ausflagA {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
+#usa1, #uk1, #canada1, #aus {
+    font-size: 16px;
+    padding: 5px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.paragraph {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+   
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

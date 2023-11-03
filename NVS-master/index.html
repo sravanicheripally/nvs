@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nvs Consultancy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="contact-bar">
+            <div id="contact-email">Email: nvsconsultancy.com</div>
+            <div id="contact-mobile">Mobile: +91 8886702173, +1 414-241-2535</div>
+        </div>
+
+                <div class="select-container">
+                    <h2 id="nvs">
+                        <b id="nnn" contenteditable="true"></b>
+                        <!-- Added a span where the name will be displayed -->
+                        <span id="welcome-message"></span>
+            <select>
+                <option value="US">USA</option>
+                <option value="UK">UK</option>
+                <option value="can">CANADA</option>
+                <option value="aus">AUSTRALIA</option>
+            </select>
+            <select>
+                <option value="about">ABOUT NVS</option>
+                <option value="students">STUDENTS</option>
+                <option value="Emp">EMPLOYEES</option>
+                <option value="ceo">CEO</option>
+            </select>
+            <select>
+                <option value="services">SERVICES</option>
+                <option value="adm">Admission Counselling</option>
+            </select>
+            <select>
+                <option value="gallery">GALLERY</option>
+            </select>
+            <select>
+                <option value="branches">OUR BRANCHES</option>
+            </select>
+            <select>
+                <option value="contact">CONTACTS</option>
+            </select>
+            <select>
+                <option value="book">BOOK FREE COUNSELLING</option>
+            </select>
+            </h2>
+        </div>
+    </header>
+    <body>
+        <img src="USA1.JPG" id="reddy">
+    <h5>We Will Be Happy To Help You
+        <div id="o"><big><big>Get In Touch With Our</big></big><big><big><big>Experienced Counselors</big></big></big></div>
+    </h5>
+
+    <div class="image-container">
+        
+        
+        <div class="image-box">
+        <form>
+
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        
+        <label for="email">Email</label>
+        <input type="email">
+        
+        <label for="phone">Enter Your 10 Digit Number</label>
+        <input type="text">
+        
+        <label for="country">Select Country</label>
+        <select id="country">
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="Canada">Canada</option>
+            <option value="australia">AUSTRALIA</option>
+        </select>
+        
+        <label for="major">Desired Major</label>
+        <input type="text">
+        
+        <label for="exams">IELTS | TOEFL | GRE</label>
+        <input type="text">
+        
+        <label for="message">Message</label>
+        <textarea name="message" cols="45" rows="5"></textarea>
+        
+        <button type="submit" id="sub">SUBMIT FOR CALL</button>
+    </form>
+</div>
+
+<div class="image-box">
+    <div id="shiva">
+        <p>Talk To Our Certified Counselors In-Person/Virtual</p>
+        <img src="services.jpg" alt="Services Image" id="second">
+    </div>
+</div>
+<div class="image-box">
+<div id="counsel">
+    <p>Need A Consultation?</p>
+    <p>Call Us Today</p>
+    <p>+1 414-241-2535</p>
+    <img src="consule.jpg" alt="Consultation Image" id="use">
+    <img src="consuling.jpg" alt="Counseling Image" id="use">
+</div>
+</div>
+</div>
+<!-- images in one row -->
+
+<div class="image-container1">
+    <div class="image-box1">
+        <img src="usaflag.jpg" alt="usaflag">
+        <div class="image-text1">USA</div>
+    </div>
+    <div class="image-box1">
+        <img src="ukflag.jpg" alt="ukflag">
+        <div class="image-text1">UK</div>
+    </div>
+    <div class="image-box1">
+        <img src="canadaflag.jpg" alt="canadaflag">
+        <div class="image-text1">CANADA</div>
+    </div>
+    <div class="image-box1">
+        <img src="austrila.jpg" alt="austrilaflag">
+        <div class="image-text1">AUSTRALIA</div>
+    </div>
+</div>
+
+
+
+<div class="container1">
+    <div class="paragraph1">
+        <div >1</div>
+        <h2>Admission Counseling</h2>
+        <p>You can register yourself online for our services. Fill up form details and we get back to you.</p>
+    </div>
+    <div class="paragraph1">
+        <div >2</div>
+        <h2>University Selection</h2>
+        <p>Our experts suggest documentation submission as per the country’s policy and applicant base</p>
+    </div>
+    <div class="paragraph1">
+        <div >3</div>
+        <h2>Application Assistance</h2>
+        <p>After reviewing your documents, we will get in touch with you for the next personal meeting for guidance.</p>
+    </div>
+    <div class="paragraph1">
+        <div class="image-box1">4</div>
+        <h2>Visa Guidance</h2>
+        <p>And you are all ready to apply. Professional suggestions are proven 100% guaranteed.</p>
+    </div>
+</div>
+
+<!-- footer -->
+<div class="container">
+    <div class="paragraph">
+    <h3>NVS Consulting Pvt Ltd</h3>
+        <p>i20fever is a Hyderabad-based global education consultancy. Over 16+ years and 25,000+ students later, having navigated the maze of studying abroad themselves, the founder of i20fever decided to make it their business to smoothen the process for others. A team of six members laid the foundation for i20fever in 2006 in Hyderabad. In 2007, we helped over 350 students achieve their dream.
+ </p>
+    </div>
+    <div class="paragraph">
+        <h3>Our Destinations</h3>
+        <ul id="listcon">
+            <li>USA</li>
+            <li>UK</li>
+            <li>CANADAaaaa</li>
+            <li>AUSTRALIA</li>
+        </ul>
+    </div>
+</div>
+
+
+
+    </body>
+
+    <script>
+        // Function to ask for the user's name and display it
+        function askNameAndDisplay() {
+          var userName = prompt("Enter your name:", "");
+          if (userName) {
+            // Now targeting the "welcome-message" span to display the name
+            document.getElementById("welcome-message").textContent = "Welcome  " + userName;
+          }
+        }
+      
+        // Call the function as soon as the script loads
+        askNameAndDisplay();
+    </script>
+</body>
+</html>
